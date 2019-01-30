@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<title>Blogger</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<style>
+.button {
+  background-color: #008b8b;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+</head>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>INICIO</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">SOBRE MI</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">REVISTAS</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">DONACIONES</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CONTACTO</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">MAS <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">MISIONES</a>
+      <a href="#" class="w3-bar-item w3-button">VIDEOS</a>
+      <a href="#" class="w3-bar-item w3-button">NOTICIAS</a>
+    </div>
+  </div>
+
+ 
+
+  <a href="https://www.google.co.uk/" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i>Google</a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">SOBRE MI</a>
+    <a href="#work" class="w3-bar-item w3-button">REVISTAS</a>
+    <a href="#pricing" class="w3-bar-item w3-button">DONACIONES</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACTO</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="https://i.ibb.co/3pc6Wv1/antorcha-500x235.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LA ANTORCHA DE DIOS FLAMEA</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Predicando el Evangelio</h4>
+      <h5>De Cristo <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>A todas las naciones</p>
+      <p>De la tierra <a class="w3-text-teal" href="/w3css/default.asp">Bendiciones</a> por siempre...</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Modal footer</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>SOBRE MI</h2>
+<p>Anunciando el Evangelio de Jesucristo a todas las naciones de la tierra.</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="https://i.ibb.co/9Y477zm/IMG-20181109-052328-244.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Oriol Fasabi</h3>
+  <p></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://i.ibb.co/Jr04RnL/Cielo-172536.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3></h3>
+  <p></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://i.ibb.co/93pzqBX/4k-Awesome-Nature-Wallaper-HD-background-image.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3></h3>
+  <p></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://i.ibb.co/gDHNpBQ/20181003-101848.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3></h3>
+  <p></p>
+</div>
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>REVISTAS DE ENERO</h2>
+<p>Reciban saludos cordiales desde la ciudad de Londres aqui en esta seccion encontraran algunos temas que para mi son de mucha
+  importancia poder compartir con todos Ustedes. Sientase libre de dejar sus comentarios en el formulario al pie
+  de esta pagina; Espero que lo disfruten. Bendiciones.
+
+</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://i.ibb.co/j6rVxqH/Creacion-Catecismo-100117.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>DESCIFRANDO LA CREACION</h3>
+  <p> 
+      Génesis 1:1 dice que en el principio Dios creó los Cielos y la Tierra, pero el versículo 2 indica que algo ocurrió después de la creación original, puesto que dice: “Y la Tierra estaba desordenada y vacía”. La traducción correcta del versículo 2 debe ser: “Y la Tierra se volvió desordenada y vacía, y las tinieblas estaban sobre la faz del abismo”. 
+  </p>
+  <a href="read1.html">Leer más aquí</a>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://i.ibb.co/VSVRNB0/Universo-planetas-1024x662.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>POR QUE EL UNIVERSO ES TAN INMENSO</h3>
+  <p>
+      Hace unos años, algunos de mis amigos y yo discutíamos la inmensidad del universo y las maravillas que se encuentran en él. Al cabo del rato, uno de ellos preguntó con asombro: ¿Y para qué es todo eso?” El ser humano estima que hay hasta dos billones de galaxias en el universo, que se puede observar. 
+  </p>
+  <a href="read2.html">Leer más aquí</a>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://i.ibb.co/Q9rQtFZ/original.jpg" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>BUENAS NOTICIAS</h3>
+  <p>
+      Hay esperanza para la humanidad. Jesucristo predijo su regreso antes de que el ser humano se exterminara a sí mismo: “Habrá entonces gran tribulación, cual no la ha habido desde el principio del mundo hasta ahora, ni la habrá. Y si aquellos días no fuesen acortados, nadie sería salvo [nadie sobreviviría]; Mas por causa de los escogidos, aquellos días serán acortados” (Mateo 24:21-22).  
+  </p>
+  <a href="read3.html">Leer más aquí</a>
+  </div>
+  </div>
+</div>
+
+</div>
+
+
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+<div class="w3-quarter">
+    <h2>REVISTAS DE FEBRERO</h2>
+    <p>
+        Reciban saludos cordiales desde la ciudad de Londres aqui en esta seccion encontraran algunos temas que para mi son de mucha
+        importancia poder compartir con todos Ustedes. Sientase libre de dejar sus comentarios en el formulario al pie
+        de esta pagina; Espero que lo disfruten. Bendiciones.
+    </p>
+    </div>
+
+   
+<div class="w3-quarter">
+    <div class="w3-card w3-white">
+      <img src="https://i.ibb.co/MGnkHWT/9f3a2c175bb1efdc18c6415b3b096bf6.jpg" alt="Snow" style="width:100%">
+      <div class="w3-container">
+      <h3>TODO EN LA TIERRA TIENE SU FIN</h3>
+      <p> 
+          "Y ellos vivieron felices para siempre. FIN" es la forma en que muchas historias de niños concluyen, otros libros, algunas películas, obras de teatro y narraciones narran el final con sólo esas palabras: "FIN" Todas las cosas físicas tienen un principio y un final”
+
+          Usted y yo tuvimos un comienzo. Fuimos concebidos y nacimos.   
+      </p>
+      <a href="read4.html">Leer más aquí</a>
+      </div>
+      </div>
+    </div>
+    
+    <div class="w3-quarter">
+    <div class="w3-card w3-white">
+      <img src="https://i.ibb.co/ZhBPGjY/download.jpg" alt="Lights" style="width:100%">
+      <div class="w3-container">
+      <h3>COMO LAS AGUILAS 
+        </h3>
+      <p>
+          “Cuando las águilas envejecen su pico es largo y puntiagudo, se curva, apuntando contra el pecho, sus alas están envejecidas y pesadas, y sus plumas gruesas, volar se hace ya tan difícil que entonces el águila, tiene dos alternativas: morir o enfrentar un doloroso proceso de renovación que durará 150 días, 5 meses.
+      </p>
+      <a href="read5.html">Leer más aquí</a>
+      </div>
+      </div>
+    </div>
+    
+    <div class="w3-quarter">
+    <div class="w3-card w3-white">
+      <img src="https://i.ibb.co/ysKDDZY/el-universo-y-el-sistema-solar-1-638.jpg" alt="Mountains" style="width:100%">
+      <div class="w3-container">
+      <h3>EL COMIENZO Y EL FIN DEL UNIVERSO</h3>
+      <p>
+          La ciencia elemental atestigua sobre la verdad de que el universo tuvo un comienzo. La ciencia en general etiqueta la teoría principal de los orígenes del universo como la teoría del "Big Bang".    
+      </p>
+      <a href="read6.html">Leer más aquí</a>
+      </div>
+      </div>
+    </div>
+    
+    </div>
+
+
+
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>DONACIONES</h2>
+   <p>Presionar el boton para hacer tus donaciones.</p>
+    <a href="https://www.paypal.com/uk/home" class="button">Paypal</a>
+    
+
+      
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">CONTACTO</span></div>
+      <h3>DIRECCION</h3>
+      <p>VISITANOS</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  LONDRES, REINO UNIDO</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +44 7480 259752</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>segundobartra@gmail.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Nombre</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Correo Electronico</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Mensaje</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>Me gusta!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<!--<img src="" class="w3-image w3-greyscale-min" style="width:100%;">-->
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39730.87441376867!2d-0.15979425214162243!3d51.509920014643114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1548773694416" width="1700" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Siguenos</h4>
+  <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/La-Antorcha-de-Dios-Flamea-3228320643881148/" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <!--<a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>-->
+  <a class="w3-button w3-large w3-teal" href="https://plus.google.com/u/0/116609752056645822008" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/?hl=en" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="https://www.linkedin.com/feed/" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Creado por: <a href="https://amazing-panini-1ea55c.netlify.com/" target="_blank">Segundo Bartra</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Volver al Inicio</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+  
+
+</body>
+</html>

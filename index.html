@@ -435,43 +435,42 @@ img {vertical-align: middle;}
 
       
 
-<!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">CONTACTO</span></div>
-      <h3>DIRECCION</h3>
-      <p>VISITANOS</p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  LONDRES, REINO UNIDO</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +44 7480 259752</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>segundobartra@gmail.com</p>
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">UBICACION</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37387.695369814326!2d-76.94735464995432!3d-12.089907202061832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c72728f1e9c3%3A0xe561ad9645daa02c!2sLa+Molina%2C+Peru!5e1!3m2!1sen!2suk!4v1552521801400" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank" method="POST" data-netlify="true">
-      <div class="w3-section">      
-        <label>Nombre</label>
-        <input class="w3-input" type="text" name="Name" required>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Londres, Reino Unido<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +44 7480 259752<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: segundobartra@gmail.com<br>
       </div>
-      <div class="w3-section">      
-        <label>Correo Electronico</label>
-        <input class="w3-input" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">      
-        <label>Mensaje</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>  
-      <input class="w3-check" type="checkbox" checked name="Like">
-      <label>Me gusta!</label>
-      <button type="submit" class="w3-button w3-right w3-theme">Enviar</button>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank"  method="POST" data-netlify="true">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+        </button>
       </form>
     </div>
   </div>
 </div>
 
-<!-- Image of location/map -->
-<!--<img src="" class="w3-image w3-greyscale-min" style="width:100%;">-->
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39730.87441376867!2d-0.15979425214162243!3d51.509920014643114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1548773694416" width="1700" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
